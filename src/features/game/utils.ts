@@ -1,3 +1,4 @@
+import { shuffle } from "../../utils/shuffle";
 import type { CardType } from "./types";
 
 
@@ -47,9 +48,4 @@ export const generateDeck = (pairsCount: number): CardType[] => {
 
 	// return cards;
 	return shuffle(cards);
-}
-
-const shuffle = (cards: CardType[]): CardType[] => {
-	// shuffle cards
-	return cards.sort(() => Math.random() - 0.5);
 }
