@@ -1,6 +1,5 @@
+// hooks/useAppDispatch.ts
 import { useDispatch } from "react-redux";
 import type { AppDispatch } from "../app/store";
 
-export default function useAppDispatch() {
-    return useDispatch<AppDispatch>()
-}
+export const useAppDispatch: () => AppDispatch = useDispatch;
